@@ -1,0 +1,12 @@
+<h1>Users</h1>
+
+<form action="/users" method="POST">
+  <input type="text" name="username" placeholder="Username" autofocus />
+  <button type="submit">Send</button>
+</form>
+
+<ul>
+  {{#each users}}
+  <li>{{username}}</li>
+  {{/each}}
+</ul>
